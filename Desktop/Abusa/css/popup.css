@@ -1,0 +1,36 @@
+
+.hr {
+  border: 1px solid rgb(182, 177, 177);
+}
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f05454, 0 0 40px #f05454, 0 0 50px #f05454, 0 0 60px #f05454, 0 0 70px #f05454;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ef4f4f, 0 0 40px #ef4f4f, 0 0 50px #ef4f4f, 0 0 60px #ef4f4f, 0 0 70px #ef4f4f, 0 0 80px;
+  }
+}
+
+a {
+  color: rgb(46, 248, 164);
+  font-size: 12px;
+  font-style: bold;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.bot {
+  text-align: center;
+  padding: 0px;
+}
