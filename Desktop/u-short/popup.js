@@ -21,6 +21,20 @@ window.onload = function () {
 			};
 			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			xhr.send(str);
+
+			$(function(){
+				$('#sendurl').click(function(){
+					chrome.tabs.create({ url: url });
+				});
+			  });
+
+			$(function(){
+				$('#copyurl').click(function(){
+					document.execCommand(url);
+					alert("copied");
+				});
+			});
+
 		});
 	});
-};
+}; 
